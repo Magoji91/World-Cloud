@@ -1,4 +1,4 @@
-fluidPage(
+ui<-fluidPage(
   # Application title
   titlePanel("Word Cloud"),
 
