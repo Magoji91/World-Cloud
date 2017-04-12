@@ -1,4 +1,3 @@
-
 # Text of the books downloaded from:
 # A Mid Summer Night's Dream:
 #  http://www.gutenberg.org/cache/epub/2242/pg2242.txt
