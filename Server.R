@@ -5,6 +5,8 @@
 #  http://www.gutenberg.org/cache/epub/2243/pg2243.txt
 # Romeo and Juliet:
 #  http://www.gutenberg.org/cache/epub/1112/pg1112.txt
+# http://www.sthda.com/english/wiki/text-mining-and-word-cloud-fundamentals-in-r-5-simple-steps-you-should-know
+
 
 function(input, output, session) {
   # Define a reactive expression for the document term matrix
