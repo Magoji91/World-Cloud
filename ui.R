@@ -1,25 +1,27 @@
-ui<-fluidPage(
-  # Application title
-  titlePanel("Word Cloud"),
-
-  sidebarLayout(
-    # Sidebar with a slider and selection inputs
+## ui.R
+ui <- shinyUI(fluidPage(
+titlePanel("Word Cloud"),
+  
+sidebarLayout(
     sidebarPanel(
-      selectInput("selection", "Choose a book:",
-                  choices = books),
+      selectInput("selection", "Choose a Phrase:",
+                  choices = c("Seuss","Wilde")),
       actionButton("update", "Change"),
       hr(),
       sliderInput("freq",
                   "Minimum Frequency:",
-                  min = 1,  max = 50, value = 15),
+                  min = 1,  max = 1000, value = 1),
       sliderInput("max",
                   "Maximum Number of Words:",
-                  min = 1,  max = 300,  value = 100)
+                  min = 1,  max = 20,  value = 100)
     ),
-
-    # Show Word Cloud
+    # Show Word Cloud    
     mainPanel(
-      plotOutput("plot")
+      tabsetPanel(type = "tabs", 
+                  tabPanel("Plot", plotOutput("plot"))
+                  
+      )
     )
-  )
 )
+))
+
