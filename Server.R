@@ -19,6 +19,6 @@ output$plot <- renderPlot({
 v <- terms()
 wordcloud_rep(names(v), v, scale=c(5,0.5),
               min.freq = input$freq, max.words=input$max,
-              colors=brewer.pal(11, "Spectral"))
+              colors=brewer.pal(11, "Set3"))
 })
 })
